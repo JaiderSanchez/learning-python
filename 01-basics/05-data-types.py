@@ -12,6 +12,12 @@ is_online = True               # Boolean (bool) - Verdadero o Falso -> True or F
 # Ideales para inventarios o cosas que cambian. -> Ideal for inventories or things that change.
 loadout_weapons = ["M4", "AK-47", "Sniper"]
 loadout_weapons.append("Granada") # Es posible agregar cosas nuevas a la lista -> It's possible to add new items to the list.
+loadout_weapons.extend(["Lanzallamas", "C4"]) # Es posible agregar múltiples elementos a la lista -> It's possible to add multiple items to the list.
+
+# Regla completa: -> Complete rule:
+# append() → agrega el objeto completo. -> append() → adds the entire object.
+# extend() → agrega los elementos que contiene el objeto. -> extend() → adds the elements contained in the object.
+
 
 # Tuplas (tuple): Cajas ordenadas que no es posible modificar (inmutables). -> Tuples: Ordered containers that cannot be modified (immutable).
 # Ideales para configuraciones fijas que no deben romperse. -> Ideal for fixed configurations that must not break.
@@ -36,4 +42,5 @@ connected_players = {"Jaider", "Jaider", "Paisa Sensei", "Jessica"} # "Jaider" s
 print(f"La variable 'player_name' es de tipo: {type(player_name)}")
 print(f"La variable 'loadout_weapons' es de tipo: {type(loadout_weapons)}")
 print(f"El diccionario del ramen es de tipo: {type(ramen_recipe)}")
+print(f"El tipo de 'connected_players' es: {type(connected_players)}")
 print(f"Los jugadores conectados (sin duplicados) son: {connected_players}")
