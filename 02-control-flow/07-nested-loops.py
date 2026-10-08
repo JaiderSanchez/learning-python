@@ -27,3 +27,7 @@ if is_feature_in_development:
 for i in range(5):
     if i == 3:
         pass  # Pendiente implementar lógica de guardado aquí -> Pending implementation of save logic here
+    else:
+        print(i)
+
+# Este programa organiza un pequeño torneo recorriendo cada día → cada jugador, y luego muestra cómo usar pass cuando todavía no quieres poner ninguna acción dentro de un bloque de código.
